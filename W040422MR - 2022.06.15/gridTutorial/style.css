@@ -1,0 +1,100 @@
+.grid1 {
+  display: grid;
+  width: 500px;
+
+  grid-template-columns: 40px 50px auto 100px;
+  grid-template-rows: 100px 50px auto 40px;
+}
+
+.grid2 {
+  display: grid;
+
+  width: 500px;
+  height: 600px;
+
+  row-gap: 40px;
+  column-gap: 10px;
+
+  /* justify-items: center; */ /* default: stretch */
+  align-items: center; /* default: stretch */
+
+  grid-template-columns: 10% 20% 50% auto;
+  grid-template-rows: 1fr 2fr 3fr auto; /* because auto takes available space and the whole space was fraction auto has no affect */
+}
+
+.grid3 {
+  display: grid;
+
+  width: 500px;
+  height: 600px;
+
+  row-gap: 40px;
+  column-gap: 10px;
+
+  grid-template-columns: 10% 20% 50% auto;
+  grid-template-rows: 1fr 2fr 3fr auto; /* because auto takes available space and the whole space was fraction auto has no affect */
+}
+
+.grid3 > .item1 {
+  /* grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4; */
+
+  /* grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 2;
+    grid-column-end: span 3; */
+
+  grid-column: 2 / span 2;
+  grid-row: 2 / 4;
+}
+
+.grid3 > .item2 {
+  grid-column: 2 / span 2;
+}
+
+.grid4 {
+  display: grid;
+
+  width: 500px;
+  height: 600px;
+
+  row-gap: 40px;
+  column-gap: 10px;
+
+  grid-template:
+    ". kukuriku . ."
+    ". kukuriku . ."
+    "boom-boom boom-boom . ."
+    "boom-boom boom-boom . .";
+}
+
+.grid4 > .item1 {
+  grid-area: kukuriku;
+}
+
+.grid4 > .item2 {
+  grid-area: boom-boom;
+}
+
+/*  Exercise */
+#checkers-board > div:nth-child(even) {
+  background-color: brown;
+}
+
+#checkers-board > div:nth-child(odd) {
+  background-color: black;
+}
+
+#checkers-board {
+  display: grid;
+
+  width: 600px;
+  height: 600px;
+
+  gap: 1px;
+
+  grid-template-columns: repeat(6, 1fr) 0px;
+  grid-template-rows: repeat(6, 1fr);
+}

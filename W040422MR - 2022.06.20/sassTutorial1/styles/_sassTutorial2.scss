@@ -1,0 +1,66 @@
+// .alert {
+//   font-size: 2rem;
+//   border: 5px solid blue;
+//   margin: 5px;
+//   padding: 10px;
+// }
+
+// .alert-error {
+//   @extend .alert;
+//   background-color: red;
+// }
+
+// .alert-success {
+//   @extend .alert;
+//   background-color: green;
+// }
+
+// .alert-warning {
+//   @extend .alert;
+//   background-color: yellow;
+// }
+
+@mixin alert($bg-color) {
+  font-size: 2rem;
+  border: 5px solid blue;
+  margin: 5px;
+  padding: 10px;
+  background-color: $bg-color;
+}
+
+.alert-success {
+  @include alert(green);
+}
+.alert-error {
+  @include alert(red);
+}
+
+@mixin size-half($width, $height) {
+  width: $width / 2;
+  height: $height / 2;
+}
+
+.a {
+  @include size-half(50, 100);
+}
+.b {
+  @include size-half(200, 400);
+}
+
+@mixin box($bg-color, $border) {
+  width: 50px;
+  height: 60px;
+  background-color: $bg-color;
+  border: $border;
+  font-size: 1.5rem;
+  text-align: center;
+  border-style: dashed;
+  box-sizing: border-box;
+}
+
+.box-for-launch {
+  @include box(red, 1px solid blue);
+}
+.box-for-glasses {
+  @include box(brown, 3px solid blue);
+}

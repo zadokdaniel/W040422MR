@@ -1,0 +1,48 @@
+// one line comment always ends with the end of the line
+/*
+    multi line comment
+    multi line comment
+*/
+
+$primaryColor: #33beff; // the project's primary color
+$secondaryColor: rgb(212, 55, 236);
+$lightTextColor: #333;
+
+$mainFont: "Times New Roman", Times, serif;
+$secondaryFont: Arial, Helvetica, sans-serif;
+
+$sm: 1;
+$md: 1.5;
+$lg: 2;
+
+.btn {
+  border: 2px solid $primaryColor;
+  border-radius: 5px;
+  margin: 0;
+  padding: 5px;
+
+  font-family: $secondaryFont;
+  background-color: $primaryColor;
+  color: $lightTextColor;
+
+  &.bg-primary {
+    background-color: $primaryColor;
+  }
+
+  &.bg-secondary {
+    background-color: $secondaryColor;
+  }
+  &.btn-lg {
+    height: calc($lg * 40px);
+  }
+  &.btn-md {
+    height: calc($md * 40px);
+  }
+  &.btn-sm {
+    height: calc($sm * 40px);
+  }
+
+  &.aa {
+    background-color: #333;
+  }
+}

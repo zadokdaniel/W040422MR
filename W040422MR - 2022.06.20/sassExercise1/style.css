@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Pacifico&display=swap");
+.header {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+.header.primary {
+  color: rgb(101, 125, 245);
+}
+.header.secondary {
+  color: rgb(233, 107, 17);
+}
+.header.level-1 {
+  font-size: 2rem;
+}
+.header.level-2 {
+  font-size: 1.5rem;
+}
+.header.fancy {
+  font-family: "Fascinate Inline", cursive;
+}
+.header.handwrite {
+  font-family: "Pacifico", cursive;
+}
+
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-justify {
+  text-align: justify;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+/* 
+    multi-line comment
+*/
+// comment
+
+$primary: lightblue;
+$secondary: lightcoral;
+
+.layout {
+  display: grid;
+
+  gap: 4px;
+
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 80px auto 50px;
+
+  width: 100vw;
+  height: 100vh;
+
+  > header,
+  > footer {
+    background-color: $primary;
+    grid-column: 1 / span 2;
+  }
+
+  > aside,
+  > main {
+    grid-row: 2;
+    background-color: $secondary;
+  }
+
+  > main {
+    grid-column: 1 / span 1;
+    overflow-y: auto;
+  }
+
+  > aside {
+    grid-column: 2 / span 1;
+
+    height: 80%;
+
+    background-color: blue;
+  }
+}
+
+// .layout > header,
+// .layout > footer {
+//   background-color: red;
+//   grid-column: 1 / span 2;
+// }
+
+// .layout > main {
+//   grid-column: 1 / span 1;
+//   grid-row: 2;
+//   overflow-y: auto;
+// }
+
+// .layout > aside {
+//   grid-column: 2 / span 1;
+//   grid-row: 2;
+
+//   height: 80%;
+
+//   background-color: blue;
+// }

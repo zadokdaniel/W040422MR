@@ -1,0 +1,30 @@
+/* 
+    multi-line comment
+*/
+.layout {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 80px auto 50px;
+  width: 100vw;
+  height: 100vh;
+}
+.layout > header,
+.layout > footer {
+  background-color: lightblue;
+  grid-column: 1/span 2;
+}
+.layout > aside,
+.layout > main {
+  grid-row: 2;
+  background-color: lightcoral;
+}
+.layout > main {
+  grid-column: 1/span 1;
+  overflow-y: auto;
+}
+.layout > aside {
+  grid-column: 2/span 1;
+  height: 80%;
+  background-color: blue;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+.elem1,
+.elem2 {
+  position: fixed;
+
+  text-align: center;
+  line-height: 150px;
+
+  width: 150px;
+  height: 150px;
+}
+
+.elem1 {
+  top: 0;
+  left: 0;
+
+  z-index: 6;
+
+  background-color: rgb(55, 55, 55, 0.4);
+}
+.elem1:hover {
+  background-color: rgb(55, 55, 55, 1);
+}
+
+.elem2 {
+  top: 100px;
+  left: 100px;
+
+  z-index: 5;
+
+  background-color: lightcoral;
+}
