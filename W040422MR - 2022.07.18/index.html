@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <pre>
+        1. create a new project 
+        2. create three inputs for 
+            - name
+            - age
+            - favorite color
+        3. on a button click change the div 
+        which contains the inputs background color
+        to the user favorite color
+        and show in some other div the string
+        in the following pattern
+        "name (age)"
+    </pre>
+
+    <div id="inputs-container">
+      <label for="name-input">Name</label>
+      <input id="name-input" type="text" />
+      <br />
+
+      <label for="age-input">Age</label>
+      <input id="age-input" type="number" />
+      <br />
+
+      <label for="favorite-color-input">Favorite Color</label>
+      <input id="favorite-color-input" type="color" />
+      <br />
+
+      <button onclick="handleInputsSubmit()">Submit</button>
+
+      <button onclick="clearInputs()">reset</button>
+    </div>
+
+    <br /><br /><br />
+
+    <h1 id="user-info"></h1>
+  </body>
+</html>
