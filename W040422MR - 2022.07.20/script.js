@@ -136,6 +136,6 @@ function forOfExample2() {
 
   for (const user of users) {
     console.log(user);
-    console.log(user.name + " (" + user.age + ")")
+    console.log(user.name + " (" + user.age + ")");
   }
 }
