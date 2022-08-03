@@ -1,0 +1,11 @@
+1. get input from user if contains "banana" in any casing 
+show an alert with "pappaya"
+
+2. get from the user  inputs
+ - message
+count the occurrance each character
+and replace the most occurred character with 😎 and show to the user
+
+3. show a random message to the user from an array with at least 5 greetings
+
+4. receive two dates using type date from the user and show how many days had passed between them
