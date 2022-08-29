@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubbling Tutorial</title>
+    <script>
+      function log(name, event, stopPropagation = false) {
+        if (stopPropagation) {
+          event.stopPropagation();
+        }
+
+        console.log(name, event);
+      }
+
+      //   document.querySelector(".c1").addEventListener("click", function (e) {
+      //     console.log("preferred way");
+      //   });
+      //   document.querySelector(".c1").onclick = function (e) {
+      //     console.log("please don't");
+      //   };
+    </script>
+
+    <style>
+      div {
+        width: 100vw;
+        padding: 20px;
+      }
+      .c1 {
+        height: 100vh;
+        background-color: blue;
+      }
+
+      .c2 {
+        height: 60%;
+        background-color: red;
+      }
+      .c3,
+      .c4 {
+        background-color: lightyellow;
+        height: 20px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="c1" onclick="log( 'c1', event)">
+      <div class="c2" onclick="log('c2', event, true)">
+        <div class="c3" onclick="log('c3', event)">&nbsp;</div>
+        <div class="c4" onclick="log('c4', event)">&nbsp;</div>
+      </div>
+    </div>
+  </body>
+</html>
