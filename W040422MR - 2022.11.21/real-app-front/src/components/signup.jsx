@@ -1,3 +1,4 @@
+import Input from "./common/input";
 import PageHeader from "./common/pageHeader";
 
 const SignUp = () => {
@@ -11,44 +12,11 @@ const SignUp = () => {
       <form noValidate autoComplete="off">
         <div className="alert alert-danger">Error</div>
 
-        <div className="form-group my-1">
-          <label htmlFor="email">Email</label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            className="form-control is-invalid"
-          />
-          <span className="invalid-feedback">
-            please provide a valid email address
-          </span>
-        </div>
+        <Input type="email" name="email" label="Email" required />
 
-        <div className="form-group my-1">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            className="form-control is-invalid"
-          />
-          <span className="invalid-feedback">
-            please provide a valid password
-          </span>
-        </div>
+        <Input type="password" name="password" label="Password" required />
 
-        <div className="form-group my-1">
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            className="form-control is-invalid"
-          />
-          <span className="invalid-feedback">
-            please provide a valid name address
-          </span>
-        </div>
+        <Input type="text" name="name" label="Name" required />
 
         <div className="my-2">
           <button className="btn btn-primary">Sign Up</button>
