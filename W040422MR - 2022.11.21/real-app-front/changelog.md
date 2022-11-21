@@ -1,7 +1,7 @@
 ## create common Input component
 
 - create Input component
-- 
+- use it in signup page's form
 
 ## create signup page
 
