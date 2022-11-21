@@ -1,3 +1,8 @@
+## add routes and use links and navlinks
+
+- add routes in App.jsx for home and about
+- replace <a> tags with Links and NavLinks components
+
 ## install react-router-dom package
 
 `npm install react-router-dom`
