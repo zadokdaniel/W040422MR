@@ -1,3 +1,8 @@
+## create signup page
+
+- create sign up component page
+- route to the component on correlated navlink
+
 ## add routes and use links and navlinks
 
 - add routes in App.jsx for home and about
