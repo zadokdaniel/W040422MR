@@ -1,6 +1,7 @@
 import "./App.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
+import Home from "./components/home";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
         <Navbar />
       </header>
 
-      <main className="flex-fill container">MAIN</main>
+      <main className="flex-fill container">
+        <Home />
+      </main>
 
       <Footer />
     </div>
