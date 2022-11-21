@@ -1,3 +1,7 @@
+## install react-router-dom package
+
+`npm install react-router-dom`
+
 ## extract header from home and about into PageHeader component
 
 ```jsx
