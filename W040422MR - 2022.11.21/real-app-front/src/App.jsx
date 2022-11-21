@@ -2,6 +2,7 @@ import "./App.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
+import About from "./components/about";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       </header>
 
       <main className="flex-fill container">
-        <Home />
+        {/* <Home /> */}
+        <About />
       </main>
 
       <Footer />
