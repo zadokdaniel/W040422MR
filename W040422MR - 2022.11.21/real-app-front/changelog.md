@@ -1,3 +1,9 @@
+## navbar component
+
+1. create navbar component and connect to App.jsx
+2. copy sm navbar from bootstrap examples into the navbar.jsx component
+3. fix to the desired structure (see commit)
+
 ## create footer component
 
 ```jsx
