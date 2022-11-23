@@ -1,3 +1,7 @@
+## install formik
+
+`npm install formik`
+
 ## create common Input component
 
 - create Input component
