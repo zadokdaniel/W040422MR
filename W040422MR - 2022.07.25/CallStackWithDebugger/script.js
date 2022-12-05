@@ -1,6 +1,6 @@
 // open as file (without live share)
 
-debugger;
+// debugger;
 
 console.log("call stack example");
 
@@ -15,8 +15,12 @@ function a() {
 function b() {
   console.log("b start");
 
+  // try {
   c();
   e();
+  // } catch (e) {
+  // } finally {
+  // }
 
   console.log("b end");
 }
@@ -30,8 +34,8 @@ function c() {
 function d() {
   console.log("d start");
 
-  //   let a = undefined;
-  //   a.a.b.c;
+  // let a = undefined;
+  // a.a.b.c;
 
   console.log("d end");
 }
@@ -40,5 +44,3 @@ function e() {
   console.log("e start");
   console.log("e end");
 }
-
-

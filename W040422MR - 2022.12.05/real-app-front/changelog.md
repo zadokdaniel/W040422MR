@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## use formik in signup
 
 ## install formik
@@ -114,8 +113,6 @@ export default Home;
 2. copy sm navbar from bootstrap examples into the navbar.jsx component
 3. fix to the desired structure (see commit)
 
-=======
->>>>>>> master
 ## create footer component
 
 ```jsx

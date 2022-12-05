@@ -4,25 +4,21 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-<<<<<<< HEAD
 import { BrowserRouter } from "react-router-dom";
 
-=======
->>>>>>> master
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { AuthProvider } from "./context/auth.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-<<<<<<< HEAD
     <BrowserRouter>
-      <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </BrowserRouter>
-=======
-    <App />
->>>>>>> master
   </React.StrictMode>
 );
 
