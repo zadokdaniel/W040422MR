@@ -1,0 +1,22 @@
+GET http://localhost:3000
+
+###
+
+POST http://localhost:3000/a/b?user=daniel
+Content-Type: application/json
+
+{
+    "name": "daniel"
+}
+
+###
+POST http://localhost:3000/testJSON
+Content-Type: application/json
+
+{ "a": 5}
+
+###
+POST http://localhost:3000
+Content-Type: application/x-www-form-urlencoded
+
+inputName=value&inputName=value

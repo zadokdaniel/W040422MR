@@ -1,0 +1,36 @@
+@local=http://localhost:3000
+
+### index page
+GET {{local}}/static
+
+### contact us page
+GET {{local}}/static/contact-us.html
+
+### thank you page
+GET {{local}}/static/thank-you.html
+
+### style
+GET {{local}}/static/styles/style.css
+
+### contactUs urlencoded
+POST {{local}}/contactUs
+Content-Type: application/x-www-form-urlencoded
+
+name=daniel&email=daniel@gmail.com&phone=0543233332&notes=some note
+
+### contactUs json
+POST {{local}}/contactUs
+Content-Type: application/json
+
+{
+  "name": "daniel",
+  "email": "daniel@gmail.com",
+  "phone": "0543233332",
+  "notes" : "some note"
+}
+
+### get all contacted submissions
+GET {{local}}/contactUs
+
+### get all contacted submissions
+GET {{local}}/contactUs?pass=12345

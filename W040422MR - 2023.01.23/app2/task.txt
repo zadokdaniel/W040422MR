@@ -1,0 +1,13 @@
+1. create a new project use express, nodemon, morgan
+2. use express static to create a public folder
+2.1. in public folder create the following pages
+	- index.html => connected to style.css shows a link to the other pages and h1 with HOME
+	- contactus.html => connected to style.css shows a link to the other pages and h1 CONTACT
+		it should have a form with the following fields: name, email, phone, notes
+		and should send post request to the endpoint /contactUs
+	- style.css
+
+3. create endpoint POST /contactUs which will receive either JSON/urlencoded body with the 
+	following information name, email, phone, notes and  will save it in "contacted" array
+4. create endpoint for GET /contactUs which will return a json with all contacted forms
+		use mw to validate only requests with the query pass=12345 can receive these information		
