@@ -1,0 +1,6 @@
+@local=http://localhost:3000
+
+GET {{local}}/
+
+###
+GET {{local}}/about HTTP/1.1
