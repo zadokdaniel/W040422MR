@@ -1,0 +1,28 @@
+@local=http://localhost:3001
+
+POST {{local}}/messages
+Content-Type: application/json
+
+{
+    "from": "daniel", 
+    "to": "aa", 
+    "message" : "hello"
+}
+
+### all messages from name
+GET {{local}}/messages?from=daniel
+
+### all messages to name
+GET {{local}}/messages?to=shalom
+
+### all messages on date
+GET {{local}}/messages?date=2023-01-30
+
+### all messages
+GET {{local}}/messages
+
+### inbox [{to: name, amount: 5}]
+GET {{local}}/inbox
+
+### delete all messages by name
+DELETE {{local}}/messages?to=aa
