@@ -1,0 +1,22 @@
+@local=http://localhost:3000
+
+### register a new user
+POST {{local}}/users/
+Content-Type: application/json
+
+{
+    "name": "daniel", 
+    "email": "a@a.com",
+    "password": "dsfdsfsdfsfkj", 
+    "biz": true
+}
+
+### authenticate (login) an existing user
+POST {{local}}/auth
+Content-Type: application/json
+
+{
+    "email":"a@a.com",
+    "password": "dsfdsfsdfsfkj"
+}
+
